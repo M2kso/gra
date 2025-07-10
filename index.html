@@ -5,8 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Business Simulator</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+      z-index: -1;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-r from-purple-700 to-indigo-700 text-white min-h-screen">
+<body class="bg-neutral-100 text-neutral-900 min-h-screen">
   <header class="text-center py-10">
     <h1 class="text-5xl font-bold">Business Simulator</h1>
     <p class="text-lg mt-2">Data Wydania: 14 Sierpień 2025r.</p>
@@ -16,15 +29,15 @@
     <section>
       <h2 class="text-3xl font-semibold mb-4">Tryby gry</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white/10 p-6 rounded-xl shadow-md">
+        <div class="bg-white/80 p-6 rounded-xl shadow-md">
           <h3 class="text-xl font-bold mb-2">🔨 Tryb P#########</h3>
           <p>OPIS niedługo</p>
         </div>
-        <div class="bg-white/10 p-6 rounded-xl shadow-md">
+        <div class="bg-white/80 p-6 rounded-xl shadow-md">
           <h3 class="text-xl font-bold mb-2">⚔💻 Tryb S####</h3>
           <p>OPIS niedługo</p>
         </div>
-        <div class="bg-white/10 p-6 rounded-xl shadow-md">
+        <div class="bg-white/80 p-6 rounded-xl shadow-md">
           <h3 class="text-xl font-bold mb-2">🚚 Tryb P########</h3>
           <p>OPIS niedługo</p>
         </div>
@@ -33,13 +46,13 @@
 
     <section class="text-center">
       <h2 class="text-2xl font-semibold mb-4">⬇️ Pobierz Grę</h2>
-      <a href="LINK_DO_POBRANIA" download class="inline-block bg-white text-indigo-700 px-6 py-3 rounded-full font-bold hover:bg-indigo-100 transition">
+      <a href="LINK_DO_POBRANIA" download class="inline-block bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-neutral-800 transition">
         Pobierz teraz
       </a>
     </section>
   </main>
 
-  <footer class="text-center py-6 text-sm text-white/80 mt-10">
+  <footer class="text-center py-6 text-sm text-neutral-600 mt-10">
     © 2025 Business Simulator. Wszelkie prawa zastrzeżone.
   </footer>
 </body>
